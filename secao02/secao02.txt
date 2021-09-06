@@ -1,0 +1,136 @@
+Seção 2: JUnit
+
+
+Testando sem Ferramenta
+
+Projeto TestesUnitarios
+
+
+Fast (Um teste deve ser rápido)
+Independent (Um teste não deve depender de outros)
+Repeatable (Um teste pode ser executado quantas vezes for necessário e quando necessário)
+Self-Verifying (Um teste deve saber quando sua execução foi correta ou falhou)
+Timely (Oportuno - Um teste deve ser criado no momento correto)
+
+
+
+
+JUnit
+
+Framework JUnit - Teste unitários para Java
+
+TestNG também segue os padrão.
+
+
+Padrões:
+
+TestRunner - Quem vai executar os testes e colher os resultados.
+
+TestFixture - Também conhecido como TestContext, são as pré-condições necesárias aos testes.
+
+TestSuites - Onde é possível elencar os testes que devem ser executados.
+
+TestResultFormatter - Serve para padronizar os resultados dos testes.
+
+Assertions - Verificam o comportamento ou o estado do que está sendo testado, geralmente através de uma expressão lógica. Se uma asserção não for satisfeita, o teste será parado neste momento.
+
+Este padrão foi criado visando os testes unitários, mas sua estrutura pode ser utilizada para outros tipos de testes, por exemplo, testes de integração, testes funcionais, onde pode ser utilizad o JUnit como ferramenta de padronização.
+
+Importar o JUnit
+
+pom.xml >
+<dependency>
+  <groupId>junit</groupId>
+  <artifactId>junit</artifactId>
+  <version>4.12</version>  
+</dependency>
+
+@Test
+public void teste() {
+
+}
+
+Atalho para executar teste: CTRL+F11
+
+Run as > JUnit Test
+
+
+Teoria da Janela de Vidro
+
+Considere um edifício com algumas janelas quebradas, se as janelas não forem reparadas, a tendência é que vândalos quebrem mais janelas.
+
+
+Nos testes unitários, uma vez que a barra deixou de ficar verde, ou seja, algum teste deixou de funcionar, se for deixado para corrigir o problema depois, outros testes não funcionar e o desenvolvedor não notará. Sendo assim, é recomendável sempre deixar a barra verde.
+
+
+
+Organização dos arquivos de teste
+
+É interessante separar os métodos de teste das classes que estão sendo testadas.
+Importante: quando o código é enviado para produção, as classes de testes não não enviadas!
+
+Convenção para facilitar
+Um classe de testes para cada classe testada e o nome da classe será o mesmo nome acrescido do sufixo teste.
+
+
+Source > Organize Imports
+
+
+Colocar as classes de testes em outro Source Folder.
+
+src/test/java
+
+
+Colocar método de teste na mesma estrutura de pacotes que ele destina-se a testar.
+
+src/main/java
+
+br.ce.wcaquino.servicos
+
+
+src/test/java
+
+br.ce.wcaquino.servicos
+
+
+Desta forma apesar do teste estar fisicamente em outra pasta, em tempo de execução o Java entende que ambas estão no mesmo pacote.
+
+As classes estão fisicamente separadas, porém logicamente juntas.
+
+Assim é possível visualizar variáveis (e métodos), públicas, protegidas e default. A única exceção é a private.
+
+
+
+Assertivas
+
+AssertThat
+
+Formas de dividir um teste
+
+Tratamento de exceções, parte 1
+
+Tratamento de exceções, parte 2
+
+Before e After
+
+Ordem de execução dos testes
+
+Desafio
+
+TDD, parte 1
+
+TDD, parte 2
+
+TDD, parte 3
+
+@Ignore e Assumptions
+
+Testes parametrizáveis
+
+Matchers Próprios
+
+Desafio
+
+Suíte de testes
+
+

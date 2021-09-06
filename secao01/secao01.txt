@@ -1,0 +1,42 @@
+Seção 1: Apresentação
+
+
+Visão Geral do Curso
+
+Testes Unitários
+
+"Na minha máquina funciona".
+
+Efeito Borboleta- Uma alteração pode afetar outras partes do sistema.
+
+
+Testes unitárias avaliam uma das menores porções de um código, que são os métodos. de posse de um método a ser testado, é possível criar n testes para este mesmo método.
+
+E o que muda para estes testes todos?
+
+Para cada teste é possível inserir uma entrada distinta, que representa um cenário diferente.
+
+Exemplo: uma entrada correta
+	 uma entrada vazia
+	 uma entrada inválida
+
+Assim é possível testar todos os cenários para aquele método.
+
+Pode ocorrer de um método ter dependências com outras entidades, no contexto de testes unitários, é necessário isolar este relacionamento externo, desta forma é possível focar única e exclusivamente nas regras de negócio que estão dentro do método que está sendo testado.
+
+
+
+ENTRADA + AÇÃO = RESULTADO
+
+Cada ação corresponde a algum resultado, porém a mesma ação em determinadas circustâncias pode obter resultados distintos.
+
+Quase todos os testes podem ser divididos em três etapas:
+
+1ª fase: CENÁRIO - Onde toda a configuração inicial é realizada para que o cenário desejado esteja disponível, ou seja, será configurado um ambiente e as entradas necessárias.
+2ª fase: AÇÃO - Onde o método testado será efetivamente executado, ou seja, foi configurado um ambiente, foram criados os dados de entrada necessários, na etapa anterior, e agora será realizado a a ação naquelas condições. Como fruto desta etapa teremos os resultados, que serão utilizados na etapa final.
+3ª fase: VALIDAÇÃO - Com base no resultado da execução e este resultado pode ser um objeto, pode ser uma mensagem de sucesso, de erro, um alerta, uma exceção ou um atributo a ser alterado, ou simplesmente o fato de não ter lançado exceção alguma. Precisa-se procurar como que a ação vai impactar no sistema.
+É neste fase que é comparado o resultado obtido com o resultado que era esperado. 
+
+
+
+
