@@ -46,7 +46,15 @@ Novo requisito: Não deve alugar filmes para devedores.
 
 Verificando Comportamentos
 
+Os mocks também permitem verificar se as interações com os objetos mockados foram realizados conforme o esperado.
+
+Nova funcionalidade "Enviar email para notificar atrasados"
+
 Verificando Comportamentos, parte 2
+
+Erro: Locações no prazo também estão recebendo emails.
+
+
 
 Anotações
 
