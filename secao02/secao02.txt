@@ -267,7 +267,43 @@ Assume.assumeFalse(DataUtils.verificarDiaSemana(new Date(), Calendar.SATURDAY));
 Assume.assumeTrue(DataUtils.verificarDiaSemana(new Date(), Calendar.SATURDAY));
 
 
+
 Testes parametrizáveis
+
+É importante refatorar os testes também.
+
+O JUnit oferece uma forma de deixar os testes parametrizados, inclusive possibilitando a criação dinâmica de testes, baseando-se nos conjuntos de dados que devem ser testados. Este recurso é chamado de parameterizer.
+
+@RunWith(Parameterized.class)
+
+@Parameter
+	public List<Filme> filmes;
+	
+	@Parameter(value=1)
+	public Double valorLocacao;
+	
+	@Parameter(value=2)
+	public String cenario;
+
+@Parameters(name="{2}")
+	public static Collection<Object[]> getParametros(){
+		return Arrays.asList(new Object[][] {
+			{Arrays.asList(filme1, filme2), 8.0, "2 Filmes: Sem Desconto"},
+			{Arrays.asList(filme1, filme2, filme3), 11.0, "3 Filmes: 25%"},
+			{Arrays.asList(filme1, filme2, filme3, filme4), 13.0, "4 Filmes: 50%"},
+			{Arrays.asList(filme1, filme2, filme3, filme4, filme5), 14.0, "5 Filmes: 75%"},
+			{Arrays.asList(filme1, filme2, filme3, filme4, filme5, filme6), 14.0, "6 Filmes: 100%"},
+			{Arrays.asList(filme1, filme2, filme3, filme4, filme5, filme6, filme7), 18.0, "7 Filmes: Sem Desconto"}
+		});
+	}
+	
+
+
+CalculoValorLocacaoTeste.java
+
+Data Driven Test- Teste orientado a dados.
+
+
 
 Matchers Próprios
 
