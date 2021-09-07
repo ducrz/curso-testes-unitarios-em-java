@@ -191,9 +191,19 @@ Before e After
 
 Ordem de execução dos testes
 
+@FixMethodOrder(MethodSorters.NAME_ASCENDING)
+
+Executando em ordem alfabética.
+
+Ex: t1 e t2.
+
 
 
 Desafio
+
+Adicionar ao projeto o requisito "alugar mais que um filme por vez".
+
+
 
 TDD, parte 1
 
