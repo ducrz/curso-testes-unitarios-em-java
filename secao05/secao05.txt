@@ -58,9 +58,27 @@ Erro: Locações no prazo também estão recebendo emails.
 
 Anotações
 
+@Before
+	public void setup(){
+		MockitoAnnotations.initMocks(this);
+}
+
+@Mock
+
+@InjectMocks
+
+
 Lançando Exceções
 
+Usando quando o comportamento esperado para um cenário é que determinado mock lance uma exceção durante a execução.
+
+Existem dois tipos de exceções: as checadas(dependentes da Exception, são programadas) e as não checadas(runtimeException, em tempo de execução).
+
+
+
 Capturando Argumentos
+
+
 
 Spy
 
