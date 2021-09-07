@@ -1,4 +1,4 @@
-# Curso Testes unitários em JAVA
+# Curso Testes Unitários em JAVA
 Códigos e anotações do Curso Testes Unitários em JAVA: Domine JUnit, Mockito e TDD.
 
 Professor: 
