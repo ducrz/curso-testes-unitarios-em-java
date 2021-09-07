@@ -307,6 +307,16 @@ Data Driven Test- Teste orientado a dados.
 
 Matchers Próprios
 
+Matchers podem ser criados para melhorar a legibilidade do código, quanto para centralizar alguma regra específica so projeto.
+
+Com uma biblioteca própria de Matchers, a criação de testes ficará mais simples.
+
+Pacote matchers
+
+	MatchersProprios.java
+	DiaSemanaMatcher.java
+
+
 Desafio
 
 Suíte de testes
