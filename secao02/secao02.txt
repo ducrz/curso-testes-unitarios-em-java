@@ -326,6 +326,20 @@ DataDiferencaDiasMatcher.java
 MatchersProprios.java
 
 
+
 Suíte de testes
+
+Uma forma de executar todos os testes em uma "bateria de testes".
+
+Pacote suites
+	SuiteExecucao.java
+	
+@RunWith(Suite.class)	
+@SuiteClasses({
+	CalculadoraTest.class,
+	CalculoValorLocacaoTest.class,
+	LocacaoServiceTest.class
+})
+
 
 
