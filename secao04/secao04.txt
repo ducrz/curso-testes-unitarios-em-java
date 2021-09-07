@@ -1,0 +1,35 @@
+Seção 4: Análise de Cobertura
+
+Análise de Cobertura
+
+Métricas a partir de testes unitários
+
+Percentual de aceitação dos testes
+A quantidade de testes executdos com sucesso, dividido pela quantidade de testes executados no geral.
+
+18/18 - 100% de aceitação dos testes
+
+
+Percentual de cobertura de códigos
+
+Plugin MarkEclemma
+
+Na pasta test, coverage "Java".
+
+
+Ao final da execução as linhas de código ficarão coloridas.
+
+Verde: Linha foi executada completamente.
+
+Amarelo: Linha foi executada parcialmente. Só ocorrem com linhas que contêm lógica, ou seja, a execução pode tomar caminhos distintos. Estas linhas também são conhecidas como branches.
+
+Vermelho: Linha não foi executada.
+
+Na aba Coverage existe um relatório indicando o percentual de cobertura do projeto.
+
+Element	Coverage	Covered   Instructions	Missed Instructions	Total Instructions
+br.ce.wcaquino.servicos	 88,4 %	   489	         64	                 553
+
+
+100% de cobertura não indica que o código está todo testado e muito menos indica que está livre de erros.
+
