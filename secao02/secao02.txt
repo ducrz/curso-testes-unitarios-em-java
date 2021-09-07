@@ -126,9 +126,43 @@ assertThat(isMesmaData(locacao.getDataRetorno(), obterDataComDiferencaDias(1)), 
 
 Formas de dividir um teste
 
+Além de independente, um teste deve ser isolado.
+Cada teste deve verificar uma falha isoladamente.
+
+Cada teste deve ter apenas uma assertiva, com isto a falha fica mais rastreável.
+
+@Rule
+	public ErrorCollector error = new ErrorCollector();
+
+
 Tratamento de exceções, parte 1
 
+
+
+Não deve ser permitido alugar filmes sem estoque.
+
+@Rule
+	public ExpectedException exception = ExpectedException.none();
+	
+
 Tratamento de exceções, parte 2
+
+Usuário e filme agora são obrigatórios.
+
+Formas: ELEGANTE, ROBUSTA E NOVA.
+
+Forma elegante funciona bem, quando somente a exceção importa para o teste.
+
+Se for necessário também a mensagem de erro, então será necessário utilizar a forma robusta ou da forma nova.
+
+A forma nova atende na grande maioria dos casos, porém existirão pontos que apenas a forma robusta é adequada.
+
+
+A forma robusta é a mais completa.
+
+
+
+
 
 Before e After
 
