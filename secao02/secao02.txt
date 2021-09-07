@@ -248,9 +248,24 @@ TDD, parte 3
 
 Novo requisito: não deve devolver filmes no domingo.
 
+Problema: um teste funciona de segunda a sexta e o outro funciona somente no sábado.
+
+
 
 
 @Ignore e Assumptions
+
+
+@Ignore- O teste não será executado, porém agora a mensagem de teste "pulado" irá aparecer.
+
+@Assumptions - Controlar que testes devem ser executados ou não.
+
+//Teste não deve ser executado no Saábado
+Assume.assumeFalse(DataUtils.verificarDiaSemana(new Date(), Calendar.SATURDAY));
+
+//Teste deve ser executado somente no Sábado
+Assume.assumeTrue(DataUtils.verificarDiaSemana(new Date(), Calendar.SATURDAY));
+
 
 Testes parametrizáveis
 
