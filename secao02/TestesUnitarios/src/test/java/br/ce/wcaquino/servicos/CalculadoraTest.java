@@ -4,7 +4,7 @@ import org.junit.Assert;
 import org.junit.Before;
 import org.junit.Test;
 
-import exceptions.NaoPodeDividirPorZeroException;
+import br.ce.wcaquino.exceptions.NaoPodeDividirPorZeroException;
 
 public class CalculadoraTest {
 	

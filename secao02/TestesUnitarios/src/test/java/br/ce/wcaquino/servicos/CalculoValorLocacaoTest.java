@@ -18,8 +18,8 @@ import org.junit.runners.Parameterized.Parameters;
 import br.ce.wcaquino.entidades.Filme;
 import br.ce.wcaquino.entidades.Locacao;
 import br.ce.wcaquino.entidades.Usuario;
-import exceptions.FilmeSemEstoqueException;
-import exceptions.LocadoraException;
+import br.ce.wcaquino.exceptions.FilmeSemEstoqueException;
+import br.ce.wcaquino.exceptions.LocadoraException;
 
 
 @RunWith(Parameterized.class)

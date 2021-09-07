@@ -1,0 +1,37 @@
+Seção 5: Mocks
+
+Dependências Externas
+
+Um texto unitário não deve ter dependências externas, como acesso a banco de dados, arquivos e etc.
+
+Conceito Shift Left - Criar testes o mais cedo possível, visando antecipar problemas.
+
+
+
+Objetos Falsos
+
+No sistema real a classe que estamos testando relaciona-se com outras classes e estas relacionam-se com outras.
+
+No teste não importa como este serviço é implementado, pode-se tratar todos estes relacionamentos como caixas pretas. Tudo que é necessário é uma expectativa de como estes relacionamentos devem comportar-se em um determinado cenário.
+
+Basta então uma implementação simples que traga o mesmo resultado que seria esperado em uma execução real.
+
+
+Mockito
+
+Gravando Expectativas
+
+Verificando Comportamentos
+
+Verificando Comportamentos, parte 2
+
+Anotações
+
+Lançando Exceções
+
+Capturando Argumentos
+
+Spy
+
+
+
