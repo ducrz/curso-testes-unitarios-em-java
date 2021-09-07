@@ -1,0 +1,17 @@
+Seção 3: DataBuilders
+
+Criação de dados para os testes
+
+Test Data Builder + Fluent Interface
+
+Pacote builders
+	UsuarioBuilder.java
+	FilmeBuilder.java
+
+
+
+BuilderMaster
+
+builderMaster.jar
+
+https://github.com/wcaquino/BuilderMaster
