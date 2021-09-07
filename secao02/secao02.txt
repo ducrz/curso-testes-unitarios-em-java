@@ -207,9 +207,48 @@ Adicionar ao projeto o requisito "alugar mais que um filme por vez".
 
 TDD, parte 1
 
+Código, Teste e Refatora.
+
+
+TEST DRIVEN DEVELOPMENT
+Desenvolvimento guiado por testes.
+
+
+1ª etapa: teste
+2ª etapa: código - vai ter o mínimo necessário para que o teste passe
+3ª etapa: refatoração - refatora para o código final
+
+
+Exemplo: CalculadoraTest.java
+
+RED - Cria uma teste, sem implementação ainda, quando executado ele vai falhar.
+GREEN - Teste passando e código correto.
+REFACTOR- Código final.
+
+O projeto vai assim evoluindo a pequenos passos, conhecidos como baby steps.
+
+
+FAST - Execução rápida, assim o desenvolvedor pode executá-los sempre que precisar, após cada alteração por exemplo.
+
+TIMELY - Tempo oportuno. Quanto antes puder usar, mais vezes este teste será executado e menos tempo será perdido, seja debugando código ou consertando erros.
+A qualidade do código gerado é melhor, pois o código foi planejado antes de ser devidamente escrito.
+Menos acoplamento, diferente de códigos legados, que tem alto acoplamento.
+
+
+
 TDD, parte 2
 
+Nova funcionalidade:
+Descontos crescentes: 25% no 3º filme, 50% no 4º filme, 75% no 5º filme e 100% no 6º filme.
+
+LocacaoServiceTest.java
+
+
 TDD, parte 3
+
+Novo requisito: não deve devolver filmes no domingo.
+
+
 
 @Ignore e Assumptions
 
