@@ -161,12 +161,37 @@ A forma nova atende na grande maioria dos casos, porém existirão pontos que ap
 A forma robusta é a mais completa.
 
 
-
-
-
 Before e After
 
+
+@Before
+	public void setup(){
+		System.out.println("Before");
+		//O que precisa ser repetido antes de cada método, fica aqui
+	}
+	
+@BeforeClass
+	public void setupClass(){
+		System.out.println("Before Class");
+		//O que precisa ser repetido antes da Classe, fica aqui
+}
+	
+@After
+	public void tearDown(){
+		System.out.println("After");
+		//O que precisa ser repetido depois de cada método, fica aqui
+}
+
+@AfterClass
+	public void (){
+		System.out.println("After");
+		//O que precisa ser repetido depois do final dos testes, fica aqui
+}	
+	
+
 Ordem de execução dos testes
+
+
 
 Desafio
 
