@@ -78,9 +78,22 @@ Existem dois tipos de exceções: as checadas(dependentes da Exception, são pro
 
 Capturando Argumentos
 
+Argument captor é um recurso do mockito que permite deixar o uso dos mocks ainda mais dinâmico.
+
+
+Nova funcionalidade: Prorrogar uma locação. Criar uma nova locação baseada na anterior.
+
 
 
 Spy
+
+@Spy
+
+Funcionamento parecido com o @Mock.
+
+Quando o Spy não sabe o que fazer, ele não retorna 0, ele faz a execução real do método, diferente do Mock.
+
+Por isto o Spy não funciona com interfaces, só funciona com classes concretas.
 
 
 
