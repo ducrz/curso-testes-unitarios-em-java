@@ -19,6 +19,24 @@ Basta então uma implementação simples que traga o mesmo resultado que seria e
 
 Mockito
 
+Ele não gera objetos falsos, ele gera objetos mocks.
+
+A principal diferença entre fakes e mocks é que nos mocks é possível definir comportamentos dinâmicos e inclusive verificar se ele for utilizado conforme o esperado.
+
+
+Refatorar e Mockar
+
+pom.xml >
+
+  <dependency>
+  <groupId>org.mockito</groupId>
+  <artifactId>mockito-all</artifactId>
+  <version>1.10.19</version>  
+  </dependency>
+  
+LocacaoDAO dao = Mockito.mock(LocacaoDAO.class);
+
+
 Gravando Expectativas
 
 Verificando Comportamentos
