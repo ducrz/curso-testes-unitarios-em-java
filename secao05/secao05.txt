@@ -39,6 +39,11 @@ LocacaoDAO dao = Mockito.mock(LocacaoDAO.class);
 
 Gravando Expectativas
 
+Cabe ao desenvolvedor ensinar ao objeto mockado como ele deve reagir a cada pergunta feita a ela, para que ele comporte-se da mesma maneira que um objeto real responderia.
+
+Novo requisito: Não deve alugar filmes para devedores.
+
+
 Verificando Comportamentos
 
 Verificando Comportamentos, parte 2
