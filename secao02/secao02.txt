@@ -103,7 +103,26 @@ Assim é possível visualizar variáveis (e métodos), públicas, protegidas e d
 
 Assertivas
 
+É uma das características do framework JUnit e está diretamente ligada a uma expressão lógica.
+Se essa expressão for verdadeira, o teste segue, caso o teste não passe na assertiva, o comportamento padrão é que o teste falhe exatamente neste ponto.
+
+AssertTest.java
+
+
+
 AssertThat
+
+
+Verifique que
+
+Deve ser genérico mesmo, a partir deste ponto pode ser feita a verificação que for necessária.
+Serve para deixar a leitura do método mais fluído, fluent interface.
+
+assertThat(locacao.getValor(), is(equalTo(5.0)));
+assertThat(locacao.getValor(), is(not(6.0)));
+assertThat(isMesmaData(locacao.getDataLocacao(), new Date()), is(true));
+assertThat(isMesmaData(locacao.getDataRetorno(), obterDataComDiferencaDias(1)), is(true));
+
 
 Formas de dividir um teste
 
