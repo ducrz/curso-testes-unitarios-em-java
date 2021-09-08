@@ -1,0 +1,78 @@
+Seção 7: Conteúdos Extras
+
+Testes em Paralelo, parte 1
+
+Fast - Rapidez na execução.
+
+Otimizar o projeto a nível de execução.
+
+É recomendável executar processos de testes em paralelo.
+
+JUnit não têm suporte nativo a paralelismo.
+
+package runners
+
+ParallelRunner.java
+
+
+Execução dos testes via Maven
+
+Plugin Maven - /usr/bin/mvn
+
+No terminal mvn test
+
+Obs: pom.xml >
+	<properties>
+        <maven.compiler.target>1.8</maven.compiler.target>
+        <maven.compiler.source>1.8</maven.compiler.source>
+    </properties> 
+
+
+Results :
+
+Tests run: 26, Failures: 0, Errors: 0, Skipped: 0
+
+
+
+
+Testes em Paralelo, parte 2
+
+Plugin SureFire
+
+  <build>
+  <testSourceDirectory>src</testSourceDirectory>
+  <plugins>
+  <plugin>
+  <groupId>org.apache.maven.plugins</groupId>
+  <artifactId>maven-surefire-plugin</artifactId>
+  <version>2.18.1</version>
+  <configuration>
+  	<threadCount>2</threadCount>
+  	<parallel>all</parallel>
+  </configuration>  
+  </plugin>
+  </plugins>
+  </build>
+  
+  mvn test
+  
+Running OrdemTest
+Tests run: 2, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0 sec - in OrdemTest
+
+Results :
+
+Tests run: 22, Failures: 0, Errors: 0, Skipped: 0
+
+
+  <configuration>
+  	<includes>
+  	<include>br/ce/wcaquino/**/*.java</include>
+  	</includes>
+  	<threadCount>2</threadCount>
+  	<parallel>all</parallel>
+  </configuration>  
+  
+  
+No eclipse > Run as Maven Test.
+
+
