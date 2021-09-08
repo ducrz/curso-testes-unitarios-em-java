@@ -66,4 +66,7 @@ A cobertura acada ficando comprometida.
 
 Refatorações para substituir o PowerMock
 
+Realizando os testes sem o PowerMock.
+
+
 
